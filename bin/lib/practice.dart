@@ -1,25 +1,29 @@
-class BankAccount{
-  double _balance=0;
-  final String _pin;
-  BankAccount(this._pin){
-    print('New account created');
-  }
-  //double get balance =>_balacne;
+main(){
+  //arithemetic operators
+  int a=10,b=20;
+  print("Addintion ${a+b}");
+  print("Subtraction ${a-b}");
+  print("Multiplication ${a*b}");
+  print("Division ${a/b}");
+  print("Remainder ${a%b}");
 
-  double getBalance(String pin){
-    if(pin == _pin){
-      return _balance;
-    }else{
-      throw Exception('Unauthorized access');
-    }
-  }
-  deposite(double amount){
-    _balance +=amount;
-    print('Deposited:$amount');
-  }
-  withdraw(double amount){
-    if(amount >0 && amount<= _balance){
-      _balance -=amount;
-    }else("Invalid withdraw amount");
-  }
+  //relationl operators
+  print("a is equal to b:${a==b}");
+  print("a is not equal to b:${a!=b}");
+  print("a is greater than to b:${a>b}");
+  print("a is less than to b:${a<b}");
+
+  //logical operators
+
+  bool x=true,y=false;
+
+  print("x and y ${x && y}");
+  print("x or y ${x || y}");
+  print(" not x ${!x}");
+
+  //unary
+  int v=10;
+  int c=-v;
+  v++;//v+1
+  c--;//-1
 }
